@@ -1,6 +1,7 @@
 .header__menu {
     background-color: white;
     padding: 24px 16px;
+    border-bottom: 1px solid #D9FFF5;
 }
 
 .header__menu-flex {
