@@ -1,0 +1,54 @@
+.header__menu {
+    background-color: white;
+    padding: 24px 16px;
+}
+
+.header__menu-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__btn {
+    background: url(../../images/icons/burgerlogo.svg) no-repeat;
+}
+
+.nav__btn-repair {
+    background: url(../../images/icons/repairlogo.svg) no-repeat;
+}
+
+.nav__btn-checkstatus {
+    background: url(../../images/icons/checkstatuslogo.svg) no-repeat;
+}
+
+.btn-hdr {
+    width: 40px;
+    height: 40px;
+    border: none; 
+    outline: none;
+    opacity: 0.8;
+}
+
+.btn-hdr:hover , .btn-hdr:focus {
+    opacity: 1;
+}
+
+
+.header__title {
+    margin-left: 16px;
+    font-weight: 700;
+}
+
+.header__title::before {
+    content: url(../../images/icons/highlighth1.svg);
+    position: absolute;
+    left: 0;
+}
+
+.devider {
+    content: url(../../images/icons/divider.svg);
+}
+
+.nav__btn-repair {
+    margin-right: 16px;
+}

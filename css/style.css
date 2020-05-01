@@ -1,0 +1,9 @@
+.body {
+    background: #F8F8F8;
+    font-family: 'TT Lakes';
+}
+
+.body-size {
+    margin: 0;
+    min-width: 320px;
+}
