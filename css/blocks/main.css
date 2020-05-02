@@ -28,7 +28,7 @@
     border-radius: 6px;
 }
 
-.main-info__block {
+.main-info__block--size {
     max-height: 90px;
     overflow: hidden;
     margin: auto 16px;
@@ -75,4 +75,32 @@
 .main-info__logo {
     width: 100%;
     margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+
+    .main-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    }
+
+    .main-info__logo {
+        min-width: 360px;
+        margin: 0 40px 0 48px;
+    }
+
+    .main-info__block--size {
+        max-height: 155px;
+        margin-right: 0px;
+    }
+
+    .main-info__text {
+        line-height: 20px;
+    }
+
+    .main-info__text:last-child {
+        display: block;
+    }
 }
