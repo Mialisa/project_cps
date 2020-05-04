@@ -130,6 +130,7 @@
        display: flex;
        flex-direction: row-reverse;
        justify-content: space-between;
+       align-items: baseline;
        margin-top: 42px;
        margin-left: 33px;
        min-width: 405px;
@@ -142,8 +143,8 @@
    }
 
    .header__title {
-       margin: 0;
-   }
+    margin: 0;
+}
 
     .btn-hdr__dekstop {
         display: flex;
