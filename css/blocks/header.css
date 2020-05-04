@@ -37,11 +37,11 @@
     background: url(../../images/icons/chat.svg) no-repeat;
 }
 
-.nav__btn-repair {
+.nav__btn-repair, .nav__btn-repair--dekstop {
     background: url(../../images/icons/repairlogo.svg) no-repeat;
 }
 
-.nav__btn-checkstatus {
+.nav__btn-checkstatus, .nav__btn-checkstatus--dekstop {
     background: url(../../images/icons/checkstatuslogo.svg) no-repeat;
 }
 
@@ -82,24 +82,16 @@
 }
 
 @media (max-width: 767px) {
-    .menu__devider {
-        display: none;
-    }
-
-    .nav__btn-call {
-        display: none;
-    }
-
-    .nav__btn-profile {
-        display: none;
-    }
-
-    .nav__btn-chat {
+    .menu__devider, .nav__btn-call, .nav__btn-profile, .nav__btn-chat, .nav__block-dekstop {
         display: none;
     }
 }
 
 @media (min-width: 768px) {
+    .nav__block-dekstop {
+        display: none;
+    }
+
     .nav {
         display: flex;
         justify-content: space-between;
@@ -127,4 +119,54 @@
     }
 
     
+}
+
+@media (min-width: 1120px) {
+    .header__menu {
+        display: none;
+    }
+    
+   .nav__block-dekstop {
+       display: flex;
+       flex-direction: row-reverse;
+       justify-content: space-between;
+       margin-top: 42px;
+       margin-left: 33px;
+       min-width: 405px;
+   }
+
+   .nav__block-dekstop--btns {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+
+   .header__title {
+       margin: 0;
+   }
+
+    .btn-hdr__dekstop {
+        display: flex;
+        align-items: center;
+        border: 2px solid transparent;
+        outline: none;
+        background-color: inherit;
+        box-sizing: border-box;
+        margin-right: 32px;
+        padding: 10px;
+    }
+    
+    .btn-hdr__dekstop:hover {
+        border-color: #B8FFEC;
+        background-color: white;
+        border-radius: 6px;
+    }
+
+    .nav__btn-checkstatus--dekstop, .nav__btn-repair--dekstop {
+        margin-left: 8px;
+    }
+
+    .btn-hdr {
+        opacity: 1;
+    }
 }

@@ -32,6 +32,7 @@
     max-height: 90px;
     overflow: hidden;
     margin: auto 16px;
+    flex-grow: 3;
 }
 
 .main-info__text {
@@ -75,6 +76,7 @@
 .main-info__logo {
     width: 100%;
     margin-top: 16px;
+    flex-grow: 1;
 }
 
 @media (min-width: 768px) {
@@ -103,4 +105,30 @@
     .main-info__text:last-child {
         display: block;
     }
+}
+
+@media (min-width: 1120px) {
+    .scroll {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 32px;
+        justify-content: space-between;
+        margin-right: 20px;
+      }
+
+      .scroll__item:hover {
+          background-color: #FFFFFF;
+      }
+    
+      .main-info__block--size {
+          margin-left: 34px;
+      }
+
+      .main-info__more {
+          margin-left: 34px;
+      }
+
+      .main-info__logo {
+          margin-right: 28px;
+      }
 }

@@ -7,3 +7,10 @@
     margin: 0 auto;
     min-width: 320px;
 }
+
+@media (min-width: 1120px) {
+    .body-size {
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+}
