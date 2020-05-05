@@ -1,7 +1,7 @@
 .body {
     background: #F8F8F8;
     font-family: 'TT Lakes';
-    font-weight: 400;
+    position: relative;
 }
 
 .body-size {

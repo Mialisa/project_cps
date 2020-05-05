@@ -82,13 +82,13 @@
 }
 
 @media (max-width: 767px) {
-    .menu__devider, .nav__btn-call, .nav__btn-profile, .nav__btn-chat, .nav__block-dekstop {
+    .menu__devider, .nav__btn-call, .nav__btn-profile, .nav__btn-chat, .nav__block-dekstop--btns {
         display: none;
     }
 }
 
 @media (min-width: 768px) {
-    .nav__block-dekstop {
+    .nav__block-dekstop--btns {
         display: none;
     }
 
@@ -153,7 +153,6 @@
         box-sizing: border-box;
         margin-right: 16px;
         padding: 10px;
-        font-family: inherit;
         font-size: 16px;
     }
     
@@ -161,6 +160,11 @@
         border-color: #B8FFEC;
         background-color: white;
         border-radius: 6px;
+    }
+
+    .btn-hdr__dekstop--name {
+        font-family: 'TT Lakes';
+        font-weight: 500;
     }
 
     .nav__btn-checkstatus--dekstop, .nav__btn-repair--dekstop {
