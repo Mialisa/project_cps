@@ -17,46 +17,9 @@
     align-items: center;
 }
 
-.nav {
-    display: flex;
-}
-
-.menu__btn {
+.header__btn {
     background: url(../../images/icons/burgerlogo.svg) no-repeat;
 }
-
-.nav__btn-call {
-    background: url(../../images/icons/call.svg) no-repeat;
-}
-
-.nav__btn-profile {
-    background: url(../../images/icons/profile.svg) no-repeat;
-}
-
-.nav__btn-chat {
-    background: url(../../images/icons/chat.svg) no-repeat;
-}
-
-.nav__btn-repair, .nav__btn-repair--dekstop {
-    background: url(../../images/icons/repairlogo.svg) no-repeat;
-}
-
-.nav__btn-checkstatus, .nav__btn-checkstatus--dekstop {
-    background: url(../../images/icons/checkstatuslogo.svg) no-repeat;
-}
-
-.btn-hdr {
-    width: 40px;
-    height: 40px;
-    border: none; 
-    outline: none;
-    opacity: 0.8;
-}
-
-.btn-hdr:hover , .btn-hdr:focus {
-    opacity: 1;
-}
-
 
 .header__title {
     margin-left: 16px;
@@ -73,35 +36,20 @@
     content: url(../../images/icons/divider.svg);
 }
 
-.nav__btn-repair {
-    margin-right: 16px;
-}
 
-.menu__devider2 {
+
+.header__devider2 {
     margin-right: 20px;
 }
 
-@media (max-width: 767px) {
-    .menu__devider, .nav__btn-call, .nav__btn-profile, .nav__btn-chat, .nav__block-dekstop--btns {
+@media screen and (max-width: 767px) {
+    .header__devider {
         display: none;
     }
 }
 
-@media (min-width: 768px) {
-    .nav__block-dekstop--btns {
-        display: none;
-    }
-
-    .nav {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .nav__btn-chat, .nav__btn-profile {
-        margin-left: 16px;
-    }
-
-    .menu__devider2 {
+@media screen and (min-width: 768px) {
+    .header__devider2 {
         margin-left: 20px;
     }
 
@@ -123,55 +71,8 @@
     .header__menu {
         display: none;
     }
-    
-   .nav__block-dekstop {
-       display: flex;
-       flex-direction: row-reverse;
-       justify-content: space-between;
-       align-items: center;
-       margin-top: 42px;
-       margin-left: 33px;
-       min-width: 405px;
-   }
-
-   .nav__block-dekstop--btns {
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-   }
 
    .header__title {
     margin: 0;
-}
-
-    .btn-hdr__dekstop {
-        display: flex;
-        align-items: center;
-        border: 2px solid transparent;
-        outline: none;
-        background-color: inherit;
-        box-sizing: border-box;
-        margin-right: 16px;
-        padding: 10px;
-        font-size: 16px;
-    }
-    
-    .btn-hdr__dekstop:hover {
-        border-color: #B8FFEC;
-        background-color: white;
-        border-radius: 6px;
-    }
-
-    .btn-hdr__dekstop--name {
-        font-family: 'TT Lakes';
-        font-weight: 500;
-    }
-
-    .nav__btn-checkstatus--dekstop, .nav__btn-repair--dekstop {
-        margin-left: 8px;
-    }
-
-    .btn-hdr {
-        opacity: 1;
     }
 }

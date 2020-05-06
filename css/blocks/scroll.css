@@ -1,0 +1,39 @@
+.scroll {
+  display: flex;
+  overflow-x: scroll;
+  list-style: none;
+  padding: 0;
+}
+
+.scroll__item {
+  flex-shrink: 0;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  font-size: 16px;
+  color: #7E7E82;
+  font-weight: 500;
+}
+
+.scroll__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.scroll__item:hover {
+    border: 2px solid #B8FFEC;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+@media (min-width: 1120px) {
+  .scroll {
+      display: flex;
+      flex-wrap: wrap;
+      overflow-x: auto;
+      justify-content: space-between;
+    }
+
+    .scroll__item:hover {
+        background-color: #FFFFFF;
+    }
+  }
