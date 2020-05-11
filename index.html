@@ -10,42 +10,35 @@
 </head>
 <body class='body body-size'> 
     <header class='header'>
-        <div class='header__menu header__menu-flex'>
-            <div class="header__menu-left">
-            <button class="header__btn btn-hdr"></button>
-            <div class="header__devider devider"></div>
-            <img class="header__logo" src="./images/icons/grouplogo.svg">
+        <div class="header__layout">
+            <div class="header-left">
+                <div class="btn-header header-left__btn-menu"></div>
+                <div class="devider1"></div>
+                <img class='header-logo' src="./images/icons/grouplogo.svg" alt="Логотип CPS">
             </div>
-            <nav class="header__nav nav">
-                <button class="nav__btn-call btn-hdr"></button>
-                <button class="nav__btn-chat btn-hdr"></button>
-                <button class="nav__btn-profile btn-hdr"></button>
-                <div class="header__devider2 devider"></div>
-                <button class="nav__btn-repair btn-hdr"></button>
-                <button class="nav__btn-checkstatus btn-hdr"></button>
+            <nav class="nav">
+                <button class='nav__btn-call btn-header'></button>
+                <button class="nav__btn-chat btn-header"></button>
+                <button class="nav__btn-profile btn-header"></button>
             </nav>
-        </div>
-        <div class="nav__block-dekstop">
-            <div class="nav__block-dekstop--btns">
-                <button class="btn-hdr__dekstop"><span class='btn-hdr__dekstop--name'>Оставить заявку</span>
-                    <div class="nav__btn-repair--dekstop btn-hdr" title="Оставить заявку"></div>
+            <div class="header-right">
+                <div class="devider2"></div>
+                <button class="btn-header header-right__btn-repair">
+                    <span class="header-right__btn-repair-name">Оставить заявку</span>
+                    <img class='btn-header__dekstop' src="./images/icons/repairlogo.svg" alt="">
                 </button>
-                <button class="btn-hdr__dekstop"><span class='btn-hdr__dekstop--name'>Статус ремонта</span>      
-                    <div class="nav__btn-checkstatus--dekstop btn-hdr" title="Статус ремонта"></div>
+                <button class="btn-header header-right__btn-search">
+                    <span class="header-right__btn-search-name">Статус ремонта</span>
+                    <img class='btn-header__dekstop' src="./images/icons/checkstatuslogo.svg" alt="">
                 </button>
-                <!--<div class="btn-hdr__dekstop"><span class="btn-hdr__dekstop--name">Оставить заявку</span>
-                    <button class="nav__btn-repair--dekstop btn-hdr"></button>
-                </div>
-                <div class="btn-hdr__dekstop"><span class="btn-hdr__dekstop--name">Статус ремонта</span>
-                    <button class="nav__btn-checkstatus--dekstop btn-hdr"></button>
-                </div>-->
             </div>
+        </div>
         <h1 class='header__title'>Услуги и сервисы</h1>
         </div>
     </header>
     <main class="main">
         <ul class='main__scroll scroll'>
-          <li class="scroll__item"><a class='scroll__link' href="#">Ремонтируемые бренды</a></li>
+          <li class="scroll__item scroll__item--active"><a class='scroll__link' href="#">Ремонтируемые бренды</a></li>
           <li class="scroll__item"><a class='scroll__link' href="#">Ремонтируемые устройства</a></li>
           <li class="scroll__item"><a class='scroll__link' href="#">Цены на услуги</a></li>
           <li class="scroll__item"><a class='scroll__link' href="#">Адреса сервисных центров</a></li>
@@ -53,16 +46,16 @@
           <li class="scroll__item"><a class='scroll__link' href="#">Отзывы</a></li>
         </ul>
         <section class="main-info">
-            <article class="main-info__block">
-                <div class="main-info__block--size">
-                <p class="main-info__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
-                    Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                <p class="main-info__text">Мы успешно работаем с 1992 года и заслужили репутацию надежного 
-                    партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, 
-                    что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-                </div>
-            <button class='main-info__more main-info__btn'><span class='main-info__btn--more'>Читать далее</span></button>
-            </article>
+            <div class="main-info__layout">
+                <article class="main-info__block">
+                    <p class="main-info__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
+                        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                    <p class="main-info__text">Мы успешно работаем с 1992 года и заслужили репутацию надежного 
+                        партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, 
+                        что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                </article>
+                <button class='info-more main-info__btn'><span class='info-more__name'>Читать далее</span></button>
+            </div>
             <img class='main-info__logo' src="./images/logo.jpg" alt="CPS логотип">
         </section>
     </main>

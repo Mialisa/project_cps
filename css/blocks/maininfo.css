@@ -1,8 +1,5 @@
-.main-info__block--size {
-    max-height: 90px;
-    overflow: hidden;
-    margin: auto 16px;
-    flex-grow: 3;
+.main-info__block {
+    margin: auto 20px;
 }
 
 .main-info__text {
@@ -12,20 +9,6 @@
     margin-top: 0;
     vertical-align: top;
     line-height: 18px;
-}
-
-.main-info__text:last-child {
-    display: none;
-}
-
-.main-info__more {
-    margin-left: 16px;
-    
-}
-
-.main-info__more::before {
-    content: url(../../images/icons/iconnext.svg);
-    padding-right: 16px;
 }
 
 .main-info__logo {
@@ -41,29 +24,29 @@
     font-family: 'TT lakes';
     font-size: 16px;
     font-weight: 400;
-    margin-top: 16px;
 }
 
-.main-info__btn--more:active {
-    color: #FF3E79;
+@media (max-width: 767px) {
+    .main-info__text:nth-child(2) {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) {
     .main-info {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
+        display: flex;
+        justify-content: space-around;
     }
 
     .main-info__logo {
         min-width: 360px;
-        margin: 0 40px 0 48px;
+        margin: 0 20px 0 48px;
     }
 
-    .main-info__block--size {
-        max-height: 155px;
-        margin-right: 0px;
+    .main-info__block {
+        max-height: 135px;
+        min-width: 312px;
+        overflow: hidden;
     }
 
     .main-info__text {
@@ -76,20 +59,21 @@
 }
 
 @media (min-width: 1120px) {
-    .main-info__block--size {
+    .main-info__block {
         margin-left: 34px;
-    }
-
-    .main-info__more {
-        margin-left: 34px;
+        width: 490px;
+        max-height: none;
+        height: 160px;
+        font-size: 14px;
+        line-height: 20px;
+        flex-grow: 2;
     }
 
     .main-info__logo {
         margin-right: 28px;
-    }
-
-    .main-info__btn--more {
-        font-weight: 500;
+        margin-left: 0;
+        min-width: none;
+        width: 530px;
     }
     
     .main-info__btn {

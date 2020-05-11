@@ -12,6 +12,7 @@
   font-size: 16px;
   color: #7E7E82;
   font-weight: 500;
+  box-sizing: border-box;
 }
 
 .scroll__link {
@@ -19,8 +20,12 @@
   color: inherit;
 }
 
-.scroll__item:hover {
-    border: 2px solid #B8FFEC;
+.scroll__item:active {
+  color: #FF3E79;
+}
+
+.scroll__item--active {
+  border: 2px solid #B8FFEC;
     box-sizing: border-box;
     border-radius: 6px;
 }
@@ -33,7 +38,7 @@
       justify-content: space-between;
     }
 
-    .scroll__item:hover {
+    .scroll__item--active  {
         background-color: #FFFFFF;
     }
   }

@@ -1,0 +1,27 @@
+.info-more::before {
+    content: url(../../images/icons/iconnext.svg);
+    padding-right: 16px;
+    padding-left: 24px;
+}
+
+.info-more__name:active {
+    color: #FF3E79;
+}
+.info-more__name {
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .info-more {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .info-more {
+        margin-left: 34px;
+    }
+    .info-more::before {
+        padding-left: 0;
+    }
+}

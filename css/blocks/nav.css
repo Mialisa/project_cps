@@ -1,5 +1,6 @@
 .nav {
     display: flex;
+    justify-content: flex-end;
 }
 
 .nav__btn-call {
@@ -14,20 +15,12 @@
     background: url(../../images/icons/chat.svg) no-repeat;
 }
 
-.nav__btn-repair, .nav__btn-repair--dekstop {
-    background: url(../../images/icons/repairlogo.svg) no-repeat;
-}
-
-.nav__btn-checkstatus, .nav__btn-checkstatus--dekstop {
-    background: url(../../images/icons/checkstatuslogo.svg) no-repeat;
-}
-
 .nav__btn-repair {
     margin-right: 16px;
 }
 
 @media (max-width: 767px) {
-    .nav__btn-call, .nav__btn-profile, .nav__btn-chat, .nav__block-dekstop--btns {
+    .nav {
         display: none;
     }
 }
@@ -48,23 +41,7 @@
 }
 
 @media (min-width: 1120px) {
-   .nav__block-dekstop {
-       display: flex;
-       flex-direction: row-reverse;
-       justify-content: space-between;
-       align-items: center;
-       margin-top: 42px;
-       margin-left: 33px;
-       min-width: 405px;
-   }
-
-   .nav__block-dekstop--btns {
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-   }
-
-   .nav__btn-checkstatus--dekstop, .nav__btn-repair--dekstop {
-        margin-left: 8px;
+    .nav {
+        display: none;
     }
 }

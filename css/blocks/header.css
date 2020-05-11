@@ -1,3 +1,9 @@
+.header__layout {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
 .header__menu {
     background-color: white;
     padding: 24px 16px;
@@ -10,20 +16,10 @@
     align-items: center;
 }
 
-.header__menu-left {
-    display: flex;
-    justify-content: space-between;
-    width: 155px;
-    align-items: center;
-}
-
-.header__btn {
-    background: url(../../images/icons/burgerlogo.svg) no-repeat;
-}
-
 .header__title {
     margin-left: 16px;
-    font-weight: 700;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .header__title::before {
@@ -32,47 +28,105 @@
     left: 0;
 }
 
-.devider {
-    content: url(../../images/icons/divider.svg);
+/* Header left */
+
+.header-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 3;
 }
 
+.header-left__btn-menu {
+    background: url(../../images/icons/burgerlogo.svg) no-repeat;
+    margin: 24px 16px;
+}
 
+/* Header right */
 
-.header__devider2 {
-    margin-right: 20px;
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 155px;
+}
+
+.header-right__btn-repair {
+    background: url(../../images/icons/repairlogo.svg) no-repeat;
+    margin-right: 16px;
+}
+
+.header-right__btn-search {
+    background: url(../../images/icons/checkstatuslogo.svg) no-repeat;
+    margin-right: 16px;
+}
+
+/* Deviders */
+
+.devider1, .devider2 {
+    content: url(../../images/icons/divider.svg);
+}
+.devider2 {
+    padding: 28px 20px;
 }
 
 @media screen and (max-width: 767px) {
-    .header__devider {
+    .devider1, .header-right__btn-search-name, .header-right__btn-repair-name {
         display: none;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .header__devider2 {
-        margin-left: 20px;
+    .header-right__btn-repair-name, .header-right__btn-search-name {
+        display: none;
     }
-
-    .header__menu-left {
-        display: flex;  
-    }
-    
-    .header__menu-left {
-        width: 200px;
-    }
-
-    .header__menu {
-        padding-left: 24px;
-        padding-right: 24px;
+    .devider1 {
+        padding-right: 20px;
+        padding-left: 4px;
     }
 }
 
 @media (min-width: 1120px) {
-    .header__menu {
+    .devider1, .devider2, .header-left__btn-menu, .header-logo  {
         display: none;
     }
 
-   .header__title {
-    margin: 0;
+    .header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .header__layout {
+        background-color: inherit;
+        flex-grow: 1;
+    }
+
+    .header__title {
+        flex-grow: 5;
+        margin-top: 42px;
+    }
+
+    /* Header right */
+
+    .header-right {
+        max-width: none;
+    }
+
+    .header-right__btn-repair, .header-right__btn-search {
+        background: none;
+        display: flex;
+        margin-top: 42px;
+        width: 190px;
+        margin-right: 0;
+    }        
+
+    .header-right__btn-repair-name, .header-right__btn-search-name {
+        display: block;
+        font-size: 16px;
+        line-height: 24px;
+        align-self: center;
+        padding-right: 8px;
     }
 }
