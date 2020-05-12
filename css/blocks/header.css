@@ -30,21 +30,16 @@
 
 /* Header left */
 
-.header-left {
+.header__left {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-grow: 3;
 }
 
-.header-left__btn-menu {
-    background: url(../../images/icons/burgerlogo.svg) no-repeat;
-    margin: 24px 16px;
-}
-
 /* Header right */
 
-.header-right {
+.header__right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -52,43 +47,35 @@
     max-width: 155px;
 }
 
-.header-right__btn-repair {
-    background: url(../../images/icons/repairlogo.svg) no-repeat;
-    margin-right: 16px;
-}
-
-.header-right__btn-search {
-    background: url(../../images/icons/checkstatuslogo.svg) no-repeat;
-    margin-right: 16px;
-}
 
 /* Deviders */
 
-.devider1, .devider2 {
+.devider {
     content: url(../../images/icons/divider.svg);
 }
-.devider2 {
+
+.header__devider-right {
     padding: 28px 20px;
 }
 
 @media screen and (max-width: 767px) {
-    .devider1, .header-right__btn-search-name, .header-right__btn-repair-name {
+    .header__devider-left, .header__right-label {
         display: none;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .header-right__btn-repair-name, .header-right__btn-search-name {
+    .header__right-label {
         display: none;
     }
-    .devider1 {
+    .header__devider-left {
         padding-right: 20px;
         padding-left: 4px;
     }
 }
 
 @media (min-width: 1120px) {
-    .devider1, .devider2, .header-left__btn-menu, .header-logo  {
+    .devider, .header-logo  {
         display: none;
     }
 
@@ -110,11 +97,11 @@
 
     /* Header right */
 
-    .header-right {
+    .header__right {
         max-width: none;
     }
 
-    .header-right__btn-repair, .header-right__btn-search {
+    .header__right-button {
         background: none;
         display: flex;
         margin-top: 42px;
@@ -122,7 +109,7 @@
         margin-right: 0;
     }        
 
-    .header-right__btn-repair-name, .header-right__btn-search-name {
+    .header__right-label {
         display: block;
         font-family: 'TT Lakes';
         font-size: 16px;

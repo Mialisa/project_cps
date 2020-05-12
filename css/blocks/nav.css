@@ -3,22 +3,6 @@
     justify-content: flex-end;
 }
 
-.nav__btn-call {
-    background: url(../../images/icons/call.svg) no-repeat;
-}
-
-.nav__btn-profile {
-    background: url(../../images/icons/profile.svg) no-repeat;
-}
-
-.nav__btn-chat {
-    background: url(../../images/icons/chat.svg) no-repeat;
-}
-
-.nav__btn-repair {
-    margin-right: 16px;
-}
-
 @media (max-width: 767px) {
     .nav {
         display: none;
@@ -26,16 +10,12 @@
 }
 
 @media (min-width: 768px) {
-    .nav__block-dekstop--btns {
-        display: none;
-    }
-
     .nav {
         display: flex;
         justify-content: space-between;
     }
 
-    .nav__btn-chat, .nav__btn-profile {
+    .btn-header--chat, .btn-header--profile {
         margin-left: 16px;
     }
 }

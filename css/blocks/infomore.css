@@ -1,3 +1,10 @@
+.info-more {
+    border: none; 
+    outline: none;
+    background: inherit;
+    font-family: 'TT lakes';
+}
+
 .info-more::before {
     content: url(../../images/icons/iconnext.svg);
     padding-right: 16px;
