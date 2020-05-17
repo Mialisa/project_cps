@@ -1,6 +1,6 @@
 .btn-header {
-    width: 42px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     border: none; 
     outline: none;
     opacity: 0.8;
@@ -28,12 +28,11 @@
 
 .btn-header--repair {
     background: url(../../images/icons/repairlogo.svg) no-repeat;
-    margin-right: 16px;
+    margin-left: 16px;
 }
 
 .btn-header--search {
     background: url(../../images/icons/checkstatuslogo.svg) no-repeat;
-    margin-right: 16px;
 }
 
 .btn-header:hover, .btn-header:focus {
@@ -49,6 +48,10 @@
 @media (min-width: 768px) {
     .btn-header--chat, .btn-header--profile {
         margin-left: 16px;
+    }
+
+    .btn-header--menu {
+        margin-left: 24px;
     }
   }
 
@@ -73,4 +76,7 @@
         width: 190px;
         margin-right: 0;
     }    
+    .btn-header--repair .btn-header--search {
+        margin: 0;
+    }
 }

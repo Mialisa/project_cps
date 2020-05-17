@@ -15,8 +15,8 @@
         justify-content: space-between;
     }
 
-    .btn-header--chat, .btn-header--profile {
-        margin-left: 16px;
+    .nav--position {
+        margin-right: 16px;
     }
 }
 
