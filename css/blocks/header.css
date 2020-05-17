@@ -109,7 +109,7 @@
     /* Header right */
 
     .header__right {
-        max-width: none;
+        max-width: 380px;
         margin: 0;
         align-items: baseline;
     }
