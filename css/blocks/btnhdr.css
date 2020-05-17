@@ -76,7 +76,7 @@
         width: 190px;
         margin-right: 0;
     }    
-    .btn-header--repair .btn-header--search {
+    .btn-header--repair, .btn-header--search {
         margin: 0;
     }
 }
