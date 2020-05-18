@@ -1,42 +1,55 @@
 .btn-header {
     width: 40px;
     height: 40px;
+    border-radius: 50%;
+    background-color: #FF3E79;
     border: none; 
     outline: none;
-    opacity: 0.8;
     padding: 0;
-    box-sizing: border-box;
+    font-size: 0;
+    cursor: pointer;
 }
 
 .btn-header--call {
-    background: url(../../images/icons/call.svg) no-repeat;
+    background-image: url(../../images/icons/call111.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .btn-header--profile {
-    background: url(../../images/icons/profile.svg) no-repeat;
+    background-image: url(../../images/icons/profile111.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .btn-header--chat {
-    background: url(../../images/icons/chat.svg) no-repeat;
+    background-image: url(../../images/icons/chat111.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .btn-header--menu {
-    background: url(../../images/icons/burgerlogo.svg) no-repeat;
+    background-image: url(../../images/icons/burgermenu111.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     margin: 24px 16px;
 }
 
-
 .btn-header--repair {
-    background: url(../../images/icons/repairlogo.svg) no-repeat;
+    background-image: url(../../images/icons/repair111.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     margin-left: 16px;
 }
 
 .btn-header--search {
-    background: url(../../images/icons/checkstatuslogo.svg) no-repeat;
+    background-image: url(../../images/icons/iconcheck111.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.btn-header:hover, .btn-header:focus {
-    opacity: 1;
+.btn-header:active {
+    opacity: 0.8;
 }
 
 @media screen and (max-width: 767px) {
@@ -61,7 +74,6 @@
     }
 
     .btn-header {
-        width: 200px;
         opacity: 1;
     }
 
