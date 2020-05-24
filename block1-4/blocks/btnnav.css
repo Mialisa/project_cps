@@ -9,10 +9,18 @@
     align-items: center;
     padding: 10px 0;
     margin-bottom: 12px;
+    font-family: 'TT Lakes';
 }
 
 .btn-nav__name {
     margin-left: 24px;
     font-size: 16px;
     line-height: 24px;
+}
+
+.btn-nav--active {
+    background-image: url(../../images/icons/active.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    left: 0;
 }
