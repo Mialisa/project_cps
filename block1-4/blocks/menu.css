@@ -1,0 +1,9 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    font-family: 'TT Lakes';
+    justify-content: flex-start;
+    padding: 24px 0;
+    flex-grow: 1;
+}
+

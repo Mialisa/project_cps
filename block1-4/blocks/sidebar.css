@@ -1,0 +1,12 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    background: #FFFFFF;
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
+}

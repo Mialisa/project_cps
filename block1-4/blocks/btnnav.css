@@ -1,0 +1,18 @@
+.btn-nav {
+    border: none; 
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+    background: inherit;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 12px;
+}
+
+.btn-nav__name {
+    margin-left: 24px;
+    font-size: 16px;
+    line-height: 24px;
+}
