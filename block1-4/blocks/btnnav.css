@@ -16,11 +16,44 @@
     margin-left: 24px;
     font-size: 16px;
     line-height: 24px;
+    text-decoration: none;
+    color: inherit;
+    position:relative;
+    z-index: 1;
+}
+
+.btn-nav, 
+.btn-nav:after, 
+.btn-nav:before {
+    transition: all .3s;
+    position: relative;
+}
+
+.btn-nav:active {
+    transition: all .1s;
+    color: #FF3E79;
+}
+
+.btn-nav:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #B8FFEC;
+    height: 3px;
+}
+
+.btn-nav:hover:after {
+    width: 100%;
 }
 
 .btn-nav--active {
     background-image: url(../../images/icons/active.svg);
     background-repeat: no-repeat;
-    position: relative;
+    background-position: 0 50%;
     left: 0;
 }

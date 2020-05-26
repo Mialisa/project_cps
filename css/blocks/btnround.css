@@ -1,4 +1,4 @@
-.btn-header {
+.btn-round {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -10,45 +10,45 @@
     cursor: pointer;
 }
 
-.btn-header--call {
+.btn-round--call {
     background-image: url(../../images/icons/call111.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.btn-header--profile {
+.btn-round--profile {
     background-image: url(../../images/icons/profile111.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.btn-header--chat {
+.btn-round--chat {
     background-image: url(../../images/icons/chat111.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.btn-header--menu {
+.btn-round--menu {
     background-image: url(../../images/icons/burgermenu111.svg);
     background-repeat: no-repeat;
     background-position: center;
     margin: 24px 16px;
 }
 
-.btn-header--repair {
+.btn-round--repair {
     background-image: url(../../images/icons/repair111.svg);
     background-repeat: no-repeat;
     background-position: center;
     margin-left: 16px;
 }
 
-.btn-header--search {
+.btn-round--search {
     background-image: url(../../images/icons/iconcheck111.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.btn-header:active {
+.btn-round:active {
     opacity: 0.8;
 }
 
@@ -59,25 +59,25 @@
 }
 
 @media (min-width: 768px) {
-    .btn-header--chat, .btn-header--profile {
+    .btn-round--chat, .btn-round--profile {
         margin-left: 16px;
     }
 
-    .btn-header--menu {
+    .btn-round--menu {
         margin-left: 24px;
     }
   }
 
 @media (min-width: 1120px) {
-    .btn-header:active {
+    .btn-round:active {
         color: #FF3E79;
     }
 
-    .btn-header {
+    .btn-round {
         opacity: 1;
     }
 
-    .btn-header--menu {
+    .btn-round--menu {
         display: none;
     }
     
@@ -88,7 +88,7 @@
         width: 190px;
         margin-right: 0;
     }    
-    .btn-header--repair, .btn-header--search {
+    .btn-round--repair, .btn-round--search {
         margin: 0;
     }
 }

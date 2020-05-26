@@ -7,3 +7,6 @@
     flex-grow: 1;
 }
 
+.menu__nav {
+    padding: 0;
+}
