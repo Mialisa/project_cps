@@ -1,0 +1,15 @@
+.lang {
+    display: flex;
+}
+
+.btn-radio {
+    -webkit-appearance: none;
+}
+
+.btn-radio:checked + .lang-item--name {
+    color: #7E7E82;
+}
+
+.lang-item:not(:first-child) {
+    margin-left: 7px;
+}

@@ -53,7 +53,7 @@
 
 .btn-round:before {
     content: '';
-    background-color: #FF3E79;
+    background-color: rgb(23, 247, 255);
     border-radius: 50%;
     display: block;
     position: absolute;
