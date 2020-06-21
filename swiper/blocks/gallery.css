@@ -1,0 +1,17 @@
+.gallery {
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+    .gallery {
+        margin-left: 24px;
+        margin-top: 24px;
+    }
+}
+@media (min-width: 1120px) {
+    .gallery {
+        margin-left: 32px;
+    }
+}
+

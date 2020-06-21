@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #D9FFF5;
+    height: 80px;
+    background: linear-gradient(270deg, #FFFFFF 0%, #F8F8F8 98.61%);
+}
+.header__title {
+    font-family: 'TTLakes';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: #7E7E82;
+    margin-left: 16px;
+}
+@media (min-width: 768px) {
+    .header__title {
+        margin-left: 24px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .header__title {
+        margin-left: 32px;
+    }
+}
+
+

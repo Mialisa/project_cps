@@ -1,0 +1,12 @@
+@import url('../css/fonts.css');
+@import url('./blocks/header.css');
+@import url('./blocks/card.css');
+@import url('./blocks/swiper.css');
+@import url('./blocks/info-more.css');
+@import url('./blocks/gallery.css');
+
+body {
+    margin: 0 auto;
+    background: #F8F8F8;
+}
+

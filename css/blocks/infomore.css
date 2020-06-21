@@ -3,6 +3,7 @@
     outline: none;
     background: inherit;
     font-family: 'TT lakes';
+    cursor: pointer;
 }
 
 .info-more::before {

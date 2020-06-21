@@ -1,0 +1,37 @@
+.card {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    background: #FFFFFF url('../img/go.svg');
+    background-position: right 16px bottom 16px;
+    background-repeat: no-repeat;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding-left: 16px;
+}
+
+.card:hover, .card:active {
+    border: 1px solid #8a958d;
+}
+
+@media (min-width: 1120px) {
+    .card {
+        margin-bottom: 16px;
+        margin-right: 32px;
+        width: 240px;
+    }
+}
+
+@media (max-width: 1119px) {
+    .card {
+        margin-bottom:  16px;
+        margin-right: 24px;
+        width: 224px;
+    }
+}
+@media (max-width:767px) {
+    .card {
+        margin-right: 16px;
+    }
+}
